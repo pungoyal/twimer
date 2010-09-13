@@ -2,6 +2,7 @@ package com.thoughtworks.twimer.web;
 
 import android.util.Log;
 import com.thoughtworks.twimer.domain.Activities;
+import com.thoughtworks.twimer.factories.ActivitiesFactory;
 import org.apache.http.impl.client.DefaultHttpClient;
 
 import java.io.IOException;
@@ -18,12 +19,11 @@ public class TimeAndExpensesClient {
         String jsonResponse = "";
         try {
             jsonResponse = Http.get(activitiesUrl).use(httpClient).asString();
+            Log.d("client", jsonResponse);
         } catch (IOException e) {
-
+            e.printStackTrace();
         }
-        Log.d("client", jsonResponse);
 
-        return new Activities();
+        return new ActivitiesFactory().parse(jsonResponse);
     }
-
 }

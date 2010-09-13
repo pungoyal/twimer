@@ -8,6 +8,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="App" />
+    <orderEntry type="library" name="jUnit" level="project" />
   </component>
 </module>
 
