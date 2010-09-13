@@ -8,8 +8,6 @@ import org.json.JSONObject;
 
 public class ActivityFactory {
     public Activity parse(JSONObject object) throws JSONException {
-        Log.e("factory", object.toString());
-
         boolean billable = parseBillable(object);
 
         Entity client = new Entity(object.getString("client"), object.getString("client_name"));

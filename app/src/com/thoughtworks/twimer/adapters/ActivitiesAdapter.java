@@ -7,10 +7,10 @@ import com.thoughtworks.twimer.domain.Activities;
 import com.thoughtworks.twimer.domain.Activity;
 import com.thoughtworks.twimer.views.ActivityView;
 
-public class ProjectsAdapter extends TwimerAdapter<Activity> {
+public class ActivitiesAdapter extends TwimerAdapter<Activity> {
     private Context context;
 
-    public ProjectsAdapter(Context context, Activities activities) {
+    public ActivitiesAdapter(Context context, Activities activities) {
         super(activities);
         this.context = context;
     }

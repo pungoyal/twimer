@@ -16,7 +16,6 @@ public class TimeSheetsAdapter extends TwimerAdapter<TimeSheet> {
         this.context = context;
     }
 
-    @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         return new TimeSheetView(context, list.get(i));
     }

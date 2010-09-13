@@ -2,9 +2,7 @@ package com.thoughtworks.twimer.activities;
 
 import android.app.ListActivity;
 import android.os.Bundle;
-import com.thoughtworks.twimer.adapters.ProjectsAdapter;
 import com.thoughtworks.twimer.adapters.TimeSheetsAdapter;
-import com.thoughtworks.twimer.domain.Activities;
 import com.thoughtworks.twimer.domain.TimeSheets;
 import com.thoughtworks.twimer.web.TimeAndExpensesClient;
 
