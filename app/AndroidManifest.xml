@@ -12,6 +12,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.ActivityActivity" android:label="@string/activities_title"/>
+        <activity android:name=".activities.TimeSheetsActivity" android:label="@string/time_sheets_title"/>
     </application>
 
     <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="8"/>

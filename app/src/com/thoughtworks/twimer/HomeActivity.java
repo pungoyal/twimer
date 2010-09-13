@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import com.thoughtworks.twimer.activities.ActivityActivity;
+import com.thoughtworks.twimer.activities.TimeSheetsActivity;
 
 public class HomeActivity extends Activity {
     @Override
@@ -21,11 +22,11 @@ public class HomeActivity extends Activity {
             }
         });
 
-        Button timeSheetsButton = (Button) findViewById(R.id.activities);
+        Button timeSheetsButton = (Button) findViewById(R.id.time_sheets);
         timeSheetsButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-//                Intent intent = new Intent(HomeActivity.this, TimeSheetsActivity.class);
-//                startActivity(intent);
+                Intent intent = new Intent(HomeActivity.this, TimeSheetsActivity.class);
+                startActivity(intent);
             }
         });
     }

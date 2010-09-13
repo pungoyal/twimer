@@ -3,4 +3,5 @@
     <string name="title">Time and Expenses</string>
     <string name="app_name">Twimer</string>
     <string name="activities_title">All Activities</string>
+    <string name="time_sheets_title">Past Time Sheets</string>
 </resources>

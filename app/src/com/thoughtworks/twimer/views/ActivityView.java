@@ -28,6 +28,5 @@ public class ActivityView extends LinearLayout {
         date.setTextColor(Color.WHITE);
         date.setTextSize(10);
         addView(date, new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
-
     }
 }
