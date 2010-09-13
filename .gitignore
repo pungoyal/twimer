@@ -3,7 +3,8 @@ app/gen/*
 test/bin/*
 test/coverage/*
 unit/build/*
-*DS_Store
+.idea/workspace.xml
 .metadata/*
 local/*
 out/*
+*DS_Store

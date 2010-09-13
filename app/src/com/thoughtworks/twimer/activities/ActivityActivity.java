@@ -12,7 +12,7 @@ public class ActivityActivity extends ListActivity {
         super.onCreate(savedInstanceState);
 
         TimeAndExpensesClient client = new TimeAndExpensesClient();
-        Activities activities = client.getProjects();
+        Activities activities = client.getActivities();
 
         setListAdapter(new ProjectsAdapter(this, activities));
     }
