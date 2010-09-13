@@ -20,12 +20,12 @@ public class ActivityView extends LinearLayout {
         TextView billable = new TextView(context);
         billable.setText(String.valueOf(activity.getBillable()));
         billable.setTextColor(Color.RED);
-        billable.setTextSize(18);
+        billable.setTextSize(8);
         addView(billable, new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
 
         TextView date = new TextView(context);
         date.setText(activity.getProject());
-        date.setTextColor(Color.argb(255, 136, 136, 136));
+        date.setTextColor(Color.WHITE);
         date.setTextSize(10);
         addView(date, new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
 

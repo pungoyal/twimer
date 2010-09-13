@@ -2,6 +2,7 @@ package com.thoughtworks.twimer.web;
 
 import android.util.Log;
 import com.thoughtworks.twimer.domain.Activities;
+import com.thoughtworks.twimer.domain.TimeSheets;
 import com.thoughtworks.twimer.factories.ActivitiesFactory;
 import org.apache.http.impl.client.DefaultHttpClient;
 
@@ -25,5 +26,9 @@ public class TimeAndExpensesClient {
         }
 
         return new ActivitiesFactory().parse(jsonResponse);
+    }
+
+    public TimeSheets getTimeSheets() {
+        return new TimeSheets();
     }
 }
