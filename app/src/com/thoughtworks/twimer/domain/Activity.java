@@ -3,7 +3,15 @@ package com.thoughtworks.twimer.domain;
 public class Activity {
     private String client;
     private boolean billable;
-    private String projectName;
+    private String project;
+    private String subProject;
+
+    public Activity(boolean billable, String client, String project, String subProject) {
+        this.billable = billable;
+        this.client = client;
+        this.project = project;
+        this.subProject = subProject;
+    }
 
     public String getClient() {
         return client;
@@ -13,7 +21,15 @@ public class Activity {
         return billable;
     }
 
-    public String getProjectName() {
-        return projectName;
+    public String getProject() {
+        return project;
+    }
+
+    public boolean isBillable() {
+        return billable;
+    }
+
+    public String getSubProject() {
+        return subProject;
     }
 }

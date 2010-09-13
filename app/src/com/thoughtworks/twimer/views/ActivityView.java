@@ -24,7 +24,7 @@ public class ActivityView extends LinearLayout {
         addView(billable, new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
 
         TextView date = new TextView(context);
-        date.setText(activity.getProjectName());
+        date.setText(activity.getProject());
         date.setTextColor(Color.argb(255, 136, 136, 136));
         date.setTextSize(10);
         addView(date, new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
