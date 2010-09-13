@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">HomeActivity</string>
+    <string name="title">Time and Expenses</string>
+    <string name="app_name">Time and Expenses</string>
+    <string name="activities_title">All Activities</string>
 </resources>
